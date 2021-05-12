@@ -6,7 +6,8 @@
   gap: 40px; /*Espaço entre colunas*/
 }
 .services .service {
-  padding: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 .services .service:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -18,5 +19,5 @@
   color: #1b206e;
 }
 .services .service .icon img {
-  max-width: 100px; /*Tamanho máximo do icon*/
+  max-width: 400px; /*Tamanho máximo do icon*/
 }

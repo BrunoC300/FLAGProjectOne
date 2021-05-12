@@ -15,6 +15,7 @@ section.home {
   bottom: 0;
   right: 0;
   height: 110%; /* Isto faz com que a imagem se adapta ao tamanho do browser*/
+  border-radius: 30px;
 }
 
 @media (max-width: 1068px) {

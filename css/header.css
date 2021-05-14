@@ -1,20 +1,3 @@
-/* BUTTON */
-.btn {
-  cursor: pointer;
-  display: inline-block; /*Senão tornassemos este element inline-block não poderiamos adicionar margin pois elementos inline não aceitam*/
-  background: darkslategray;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin: 20px 0;
-  border: 0;
-  border-radius: 20px;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
 .logo {
   position: absolute;
   top: 30px;

@@ -51,14 +51,13 @@
 }
 
 .contact-form .row textarea {
-  height: 150px;
+  height: 190px;
 }
 
 .contact-form .row input[type="submit"] {
   background-color: var(--secondary-color);
   color: #fff;
   margin: 0;
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
   border: 0;

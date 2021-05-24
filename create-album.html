@@ -15,7 +15,6 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Photo Agency</title>
   </head>
@@ -55,25 +54,20 @@
       </div>
     </header>
 
-    <section class="home">
-      <img
-        src="images/117991314_771073143666292_2880077038554117476_n.jpg"
-        class="home-img"
-        alt=""
-      />
-      <div class="home-content">
-        <h1>
-          We capture your <br />
-          memories forever
-        </h1>
+    <section>
+      <h1>Crie o seu Album:</h1>
 
-        <div class="multi-button">
-          <button class="primary btn">
-            <a href="contact.html">FRAME YOUR LIFE</a>
-          </button>
+      <form action="">
+        <div>
+          <label for="nomeAlbum">Nome:</label> <input type="text" /><br /><br />
         </div>
-      </div>
+        <div>
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile" /><br /><br />
+        </div>
+      </form>
     </section>
+
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

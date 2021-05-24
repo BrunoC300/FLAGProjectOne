@@ -22,24 +22,12 @@ section.home {
 }
 
 /* BUTTON */
-.btn {
-  text-align: center;
-  cursor: pointer;
-  display: inline-block; /*Senão tornassemos este element inline-block não poderiamos adicionar margin pois elementos inline não aceitam*/
-  color: black;
-  font-weight: 800;
-  text-decoration: none;
-  margin: 0.5rem;
-  padding: 0.5em 0.75em;
-  position: relative;
-  border: 2px black solid;
-}
 
 .multi-button {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
-button {
+.primary {
   background: white;
   border: 0.125em solid black;
   cursor: pointer;
@@ -50,19 +38,19 @@ button {
   position: relative;
   text-transform: uppercase;
 }
-button::before {
+.primary::before {
   content: "";
   position: absolute;
   transition: all 0.125s ease-in-out;
 }
 
-button::after {
+.primary::after {
   content: "";
   position: absolute;
   transition: all 0.125s ease-in-out;
 }
 
-.copy::after {
+.btn::after {
   border: 0.125em dashed black;
   bottom: -0.125em;
   left: -0.125em;
@@ -70,13 +58,13 @@ button::after {
   top: -0.125em;
   z-index: -1;
 }
-.copy:hover::after {
+.btn:hover::after {
   bottom: -0.375em;
   left: 0.125em;
   right: -0.375em;
   top: 0.125em;
 }
-.copy:focus::after {
+.btn:focus::after {
   bottom: -0.375em;
   left: 0.125em;
   right: -0.375em;

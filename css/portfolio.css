@@ -40,3 +40,33 @@
   border: 1px solid #fff;
   padding: 5px 15px;
 }
+section > .title {
+  width: 78vw;
+}
+/*Delete button*/
+.button {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.3em;
+}
+.button.delete {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.button.edit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.delete:hover::before {
+  content: "Eliminar  ";
+  font-size: 0.9em;
+}
+.edit:hover::after {
+  content: "   Editar";
+  font-size: 0.9em;
+}

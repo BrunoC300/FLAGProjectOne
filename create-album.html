@@ -9,7 +9,10 @@
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-
+    <script
+      src="https://kit.fontawesome.com/854f6bada7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
@@ -56,21 +59,29 @@
 
     <section>
       <h1>Crie o seu Album:</h1>
-
-      <form action="">
-        <div>
-          <label for="nomeAlbum">Nome:</label> <input type="text" /><br /><br />
-        </div>
-        <div>
+      <div>
+        <label for="nomeAlbum">Nome:</label>
+        <input class="nomeAlbum" type="text" /><br /><br />
+      </div>
+      <div>
+        <form class="album__form" action="">
           <label for="myfile">Select a file:</label>
-          <input type="file" id="myfile" name="myfile" /><br /><br />
-        </div>
-      </form>
+          <input
+            class="imagemAlbum"
+            type="file"
+            id="myfile"
+            name="myfile"
+          /><br /><br />
+
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
     </section>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    sc
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

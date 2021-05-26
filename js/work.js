@@ -3,13 +3,12 @@ export class Album {
     this.id = id;
     this.name = name;
     this.img = img;
-
     this.create();
   }
   // return html content
   getHTML(imgUrl) {
     return `<img
-    src="images/${imgUrl}"
+    src="/${imgUrl}"
     alt=""
   />
   <div class="action">
@@ -19,15 +18,16 @@ export class Album {
   }
 
   create() {
-    const divContainer = document.createElement("div");
-    divContainer.classList.add("portfolio");
-    divContainer.setAttribute("id", `portfolio-${this.id}`);
-
+    const divContainer = document.querySelector(".portfolio");
     const divItem = document.createElement("div");
     divItem.classList.add("item");
     divItem.innerHTML = this.getHTML(this.img);
 
     divContainer.appendChild(divItem);
-    console.log("ITEM Criado");
+    const containerParent = document.querySelector(".album-shoots");
+    containerParent.appendChild(divContainer);
+    console.log(
+      `ITEM Criado com: id:${this.id} / nome:${this.name} / url:${this.img}`
+    );
   }
 }

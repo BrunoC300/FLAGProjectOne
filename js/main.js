@@ -3,11 +3,12 @@ console.log("JASJDASJDJS");
 let albumId = 1;
 const onSubmit = (event) => {
   event.preventDefault();
-  const nome = document.querySelector(".nomeAlbum");
+  const nomeSelector = document.querySelector(".nomeAlbum");
   const img = document.querySelector(".imagemAlbum");
   const imgURL = img.value.slice(12);
+  const nome = nomeSelector.value;
 
-  nome.value = "";
+  nomeSelector.value = "";
   img.value = "";
 
   postAlbum(nome, imgURL);

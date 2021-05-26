@@ -1,23 +1,15 @@
 import { Album } from "./work";
-console.log("JASJDASJDJS");
-let albumId = 1;
-const onSubmit = (event) => {
-  event.preventDefault();
-  const nomeSelector = document.querySelector(".nomeAlbum");
-  const img = document.querySelector(".imagemAlbum");
-  const imgURL = img.value.slice(12);
-  const nome = nomeSelector.value;
 
-  nomeSelector.value = "";
-  img.value = "";
+let albuns = JSON.parse(localStorage.getItem("albuns") || "[]");
 
-  postAlbum(nome, imgURL);
-};
+window.addEventListener("load", (event) => {
+  console.log("A carregar:");
+  albuns.forEach(function (album) {
+    new Album(album.albumId, album.nome, album.url);
+    console.log(album);
+  });
+});
 
-const postAlbum = (nome, img) => {
-  new Album(albumId, nome, img);
-
-  albumId++;
-};
-
-document.querySelector(".album__form").addEventListener("submit", onSubmit);
+function clearStorage() {
+  storage.clear();
+}

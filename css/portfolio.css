@@ -44,12 +44,13 @@ section > .title {
   width: 78vw;
 }
 /*Delete button*/
+
 .button {
   cursor: pointer;
   background: transparent;
   color: white;
   border: none;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .button.delete {
   position: absolute;

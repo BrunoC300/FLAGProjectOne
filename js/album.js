@@ -3,7 +3,8 @@ let albumId = 1;
 
 const onSubmit = (event) => {
   event.preventDefault();
-  const nomeSelector = document.querySelector(".nomeAlbum");
+  removeAlbum(albumId);
+  /*const nomeSelector = document.querySelector(".nomeAlbum");
   const img = document.querySelector(".imagemAlbum");
   const imgURL = img.value.slice(12);
   const nome = nomeSelector.value;
@@ -11,7 +12,7 @@ const onSubmit = (event) => {
   nomeSelector.value = "";
   img.value = "";
 
-  postAlbum(nome, imgURL);
+  postAlbum(nome, imgURL);*/
 };
 
 const postAlbum = (nome, img) => {
@@ -30,6 +31,14 @@ const postAlbum = (nome, img) => {
   new Album(albumId, nome, img);
 
   albumId++;
+};
+
+const removeAlbum = (id) => {
+  //localStorage.removeItem(//ID DO Album//);//
+
+  albuns = JSON.parse(localStorage.getItem("albuns") || "[]");
+
+  const novoAlbuns = albuns.filter((album) => album.albumId !== id);
 };
 
 document.querySelector(".album__form").addEventListener("submit", onSubmit);

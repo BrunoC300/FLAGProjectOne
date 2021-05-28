@@ -1,0 +1,36 @@
+.gallery {
+  padding-bottom: 4vw;
+}
+
+.gallery__container {
+}
+
+.gallery__title {
+  margin-bottom: 10vh;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.gallery__picture {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.gallery__link {
+  display: block;
+  overflow: hidden;
+}
+
+.gallery__link:hover .gallery__image {
+  transform: scale(1.1);
+}
+
+.gallery__image {
+  transition: 500ms;
+  width: 100%;
+}

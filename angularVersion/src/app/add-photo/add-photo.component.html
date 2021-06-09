@@ -1,6 +1,7 @@
 <form class="form" (submit)="addFoto()">
-  <div class="adicionarFoto">
-    <div>
+  <div class="container">
+    <div class="adicionarFoto">
+      <label class="labelFile" for="file"> Escolha uma foto: </label>
       <input
         accept="image/*"
         required
@@ -10,7 +11,6 @@
         class="foto-input"
         [(ngModel)]="inputUrl"
       />
-      <label class="labelFile" for="file"> Escolha uma foto </label>
       <button type="submit" value="Add Foto" class="button-add">
         <fa-icon [icon]="addIcon"></fa-icon>
       </button>

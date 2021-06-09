@@ -1,0 +1,12 @@
+<div *ngFor="let foto of fotos; let i = index" class="item">
+  <img src="{{ foto.url }}" alt="" />
+  <div class="action">
+    <a href="#">Launch</a>
+    <button class="button edit">
+      <fa-icon [icon]="editIcon"></fa-icon>
+    </button>
+    <button (click)="removeFoto(i)" class="button delete">
+      <fa-icon [icon]="deleteIcon"></fa-icon>
+    </button>
+  </div>
+</div>

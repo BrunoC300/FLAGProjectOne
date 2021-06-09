@@ -1,0 +1,26 @@
+/*Services*/
+.services {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* cria 3 colunas*/
+  gap: 40px; /*Espaço entre colunas*/
+}
+.services .service {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.services .service:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.services .service h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #1b206e;
+}
+.services .service .icon img {
+  max-width: 400px; /*Tamanho máximo do icon*/
+}
+
+
+/*# sourceMappingURL=/services.6e8f1da0.css.map */

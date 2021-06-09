@@ -1,0 +1,66 @@
+.item {
+  position: relative;
+  width: 480px;
+  height: 600px;
+  margin: 5px;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+}
+.item .action {
+  position: absolute; /*Posiciona-se dentro do container no canto superior esquerdo*/
+  top: 0;
+  left: 0;
+  width: 100%; /* Estas propriedades fazem com que ocupe todo o seu container sendo possível centrá-la agora*/
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Não se vê */
+  transition: 0.5s;
+}
+.item:hover .action {
+  opacity: 1;
+}
+
+.item .action a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+}
+section > .title {
+  width: 78vw;
+}
+/*Delete button*/
+
+.button {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.1em;
+}
+.button.delete {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.button.edit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.delete:hover::before {
+  content: "Eliminar  ";
+  font-size: 0.9em;
+}
+.edit:hover::after {
+  content: "   Editar";
+  font-size: 0.9em;
+}
+/* ---------------------------------------FORM ------------------------------------*/

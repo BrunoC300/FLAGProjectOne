@@ -5,8 +5,6 @@ import { FotosService } from '../fotos.service'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
-
-
 @Component({
   selector: 'app-album-photo',
   templateUrl: './album-photo.component.html',
@@ -24,7 +22,9 @@ export class AlbumPhotoComponent implements OnInit {
     this.fotos = this.fotosService.getFotos();
   }
   removeFoto(id: number) {
-    this.fotos = this.fotos.filter((v, i) => i !== id);
+    const answer = window.confirm("Tem a certeza?");
+    if (answer) { this.fotos = this.fotos.filter((v, i) => i !== id); }
+
   }
 
 

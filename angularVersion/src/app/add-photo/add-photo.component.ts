@@ -21,20 +21,19 @@ export class AddPhotoComponent implements OnInit {
     this.fotos = this.fotosService.getFotos();
   }
 
-  removeFoto(id: number) {
-    this.fotos = this.fotos.filter((v, i) => i !== id);
-  }
-
-
   addFoto() {
-    const extra: string = "assets/img"
-    this.inputUrl = `${extra}${this.inputUrl.slice(11)}`
     if (this.inputUrl) {
-      this.fotos.push({
-        url: this.inputUrl,
-      });
-      this.inputUrl = "";
+      const answer = window.confirm("Confirmar?");
+      if (answer) {
+        const extra: string = "assets/img"
+        this.inputUrl = `${extra}${this.inputUrl.slice(11)}`
+        this.fotos.push({
+          url: this.inputUrl,
+        });
+        this.inputUrl = "";
+      }
     }
+
   }
 
 }

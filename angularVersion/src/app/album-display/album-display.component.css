@@ -25,3 +25,7 @@ section {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
+.album-shoots {
+  padding-top: 0;
+}

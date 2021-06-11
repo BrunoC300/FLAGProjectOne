@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -18,6 +19,11 @@ export class HeaderComponent implements OnInit {
       this.toggle.classList.toggle("active");
       this.navigation.classList.toggle("active");
     });
+  }
+
+  onClick() {
+    this.toggle.classList.toggle("active");
+    this.navigation.classList.toggle("active");
   }
 
 

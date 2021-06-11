@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
 
 section.home {
+  background-color: #e7e7e7;
   flex-direction: row;
   margin-top: 0;
 }
@@ -18,7 +19,6 @@ section.home {
   bottom: 0;
   right: 0;
   height: 110%; /* Isto faz com que a imagem se adapta ao tamanho do browser*/
-  border-radius: 30px;
 }
 
 /* BUTTON */

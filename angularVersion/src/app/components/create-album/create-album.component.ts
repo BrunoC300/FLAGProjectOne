@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Foto } from '../models/foto';
+import { Foto } from '../../models/foto';
 
 
 @Component({

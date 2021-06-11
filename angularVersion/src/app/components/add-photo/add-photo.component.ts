@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import { Foto } from '../models/foto';
-import { FOTOS } from '../mock-fotos'
-import { FotosService } from '../fotos.service'
+import { Foto } from '../../models/foto';
+import { FOTOS } from '../../mock-fotos'
+import { FotosService } from '../../fotos.service'
 
 
 

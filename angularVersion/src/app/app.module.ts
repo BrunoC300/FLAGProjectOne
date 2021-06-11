@@ -5,11 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AlbumDisplayComponent } from './album-display/album-display.component';
-import { AlbumPhotoComponent } from './album-photo/album-photo.component';
-import { CreateAlbumComponent } from './create-album/create-album.component';
-import { AddPhotoComponent } from './add-photo/add-photo.component';
-import { HeaderComponent } from './header/header.component';
+import { AlbumDisplayComponent } from './components/album-display/album-display.component';
+import { AlbumPhotoComponent } from './components/album-photo/album-photo.component';
+import { CreateAlbumComponent } from './components/create-album/create-album.component';
+import { AddPhotoComponent } from './components/add-photo/add-photo.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ServicesComponent } from './components/services/services.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { HeaderComponent } from './header/header.component';
     AlbumPhotoComponent,
     CreateAlbumComponent,
     AddPhotoComponent,
-    HeaderComponent
+    HeaderComponent,
+    ServicesComponent,
+    MainPageComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -39,7 +39,7 @@
 .contact-form .row input,
 .contact-form .row textarea {
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
   color: #111;
   background: transparent;
   width: 100%;
@@ -56,13 +56,16 @@
 }
 
 .contact-form .row input[type="submit"] {
-  background-color: var(--secondary-color);
-  color: #fff;
+  color: black;
   margin: 0;
   letter-spacing: 2px;
   font-weight: 300;
-  border: 0;
+  border: 2px solid black;
   cursor: pointer;
+}
+.contact-form .row input[type="submit"]:hover {
+  color: white;
+  background-color: darkslategrey;
 }
 .contact-info {
   width: 350px;
@@ -82,7 +85,7 @@
 }
 
 .contact-info .info-box .details h4 {
-  color: var(--secondary-color);
+  color: black;
 }
 
 .contact-info .info-box .details p,

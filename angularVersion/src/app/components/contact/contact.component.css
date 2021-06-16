@@ -65,7 +65,7 @@
 }
 .contact-form .row input[type="submit"]:hover {
   color: white;
-  background-color: darkslategrey;
+  background-color: #282c34;
 }
 .contact-info {
   width: 350px;

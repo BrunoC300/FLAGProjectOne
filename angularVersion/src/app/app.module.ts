@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ServicesComponent } from './components/services/services.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { AlbumListComponent } from './components/album-list/album-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     ServicesComponent,
     MainPageComponent,
-    ContactComponent
+    ContactComponent,
+    AlbumListComponent
   ],
   imports: [
     BrowserModule,

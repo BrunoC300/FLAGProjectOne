@@ -1,5 +1,16 @@
 <form class="form" (submit)="addFoto()">
   <div class="container">
+    <div class="teste">
+      <input
+        class="back-button"
+        type="image"
+        src="/assets/icons/back.png"
+        name="goBack"
+        alt="goBack"
+        (click)="goBack()"
+      />
+    </div>
+
     <div class="adicionarFoto">
       <label class="labelFile" for="file"> Escolha uma foto: </label>
       <input

@@ -30,3 +30,18 @@ input[type="file"] {
   border-radius: 10px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
+
+.teste {
+  width: 100px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+}
+
+.back-button {
+  position: absolute;
+  bottom: 40vh;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}

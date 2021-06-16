@@ -19,7 +19,12 @@ export class AlbumListComponent implements OnInit {
   constructor(private albunsService: FotosService) { }
 
   ngOnInit(): void {
-    this.albuns = this.albunsService.getAlbuns();
+    this.getAlbuns();
+  }
+
+  getAlbuns(): void {
+    this.albunsService.getAlbuns()
+      .subscribe(album => this.albuns = album);
   }
 
   removeAlbum(id: number) {

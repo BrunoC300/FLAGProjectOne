@@ -24,7 +24,7 @@
     <div
       *ngFor="let album of albuns; let i = index"
       class="item"
-      id="{{ album.id }}"
+      routerLink="/albuns/{{ album.id }}"
     >
       <img src="{{ album.fotos[0].url }}" alt="" />
       <div class="action">

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { FOTOS } from './mock-fotos'
+import { Observable, of } from 'rxjs';
 import { ALBUNS } from './mock-albuns'
+import { Album } from './models/album';
 
 @Injectable({
   providedIn: 'root'
@@ -9,12 +10,16 @@ export class FotosService {
 
   constructor() { }
 
-  getFotos() {
-    return FOTOS;
+  getAlbuns(): Observable<Album[]> {
+    const albuns = of(ALBUNS);
+    return albuns;
   }
 
-  getAlbuns() {
-    return ALBUNS;
+  getAlbumById(id: number): Observable<Album> {
+    // For now, assume that a hero with the specified `id` always exists.
+    // Error handling will be added in the next step of the tutorial.
+    const albuns = ALBUNS.find(h => h.id === id)!;
+    return of(albuns);
   }
 
 

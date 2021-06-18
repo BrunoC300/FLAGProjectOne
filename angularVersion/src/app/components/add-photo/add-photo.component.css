@@ -17,12 +17,13 @@ input[type="file"] {
 }
 
 .button-add {
-  background-color: white;
-  color: darkgrey;
-  font-size: 1em;
+  background-color: lightgray;
+  border-radius: 50%;
+  color: black;
+  font-size: 0.7em;
   border: none;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 .adicionarFoto {
   padding-left: 1.2em;

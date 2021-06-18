@@ -14,7 +14,7 @@ section.home {
   max-width: 600px;
 }
 .home-content > h1 {
-  color: #62466b;
+  color: #301a4b;
 }
 
 .home-img {
@@ -32,7 +32,7 @@ section.home {
 }
 .primary {
   background: white;
-  border: 0.125em solid #62466b;
+  border: 0.125em solid #301a4b;
   cursor: pointer;
   font: 600 1.5rem/1.25 "Montserrat", sans-serif;
   letter-spacing: 0.125em;
@@ -54,7 +54,7 @@ section.home {
 }
 
 .btn::after {
-  border: 0.125em dashed #62466b;
+  border: 0.125em dashed #301a4b;
   bottom: -0.125em;
   left: -0.125em;
   right: -0.125em;
@@ -74,13 +74,39 @@ section.home {
   top: 0.125em;
 }
 a {
-  color: #62466b;
+  color: #301a4b;
   text-decoration: none;
   border: none;
 }
-
-@media (max-width: 1068px) {
+@media (max-width: 640px) {
+  .home-content > h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .primary {
+    font-size: 1em;
+  }
   .home-img {
-    display: none; /* Remove a imagem */
+    display: none;
+  }
+  .home-content {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1250px) {
+  .home-content > h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .primary {
+    font-size: 1em;
+  }
+
+  .home-content {
+    position: absolute;
+    top: 20%;
+    right: 10%;
   }
 }

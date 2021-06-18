@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { ALBUNS } from './mock-albuns'
+import { SERVIÇOS } from './mock-services'
 import { Album } from './models/album';
+import { Serviço } from './models/serviço';
 
 @Injectable({
   providedIn: 'root'
@@ -22,5 +24,9 @@ export class FotosService {
     return of(albuns);
   }
 
+  getServiços(): Observable<Serviço[]> {
+    const servicos = of(SERVIÇOS);
+    return servicos;
+  }
 
 }

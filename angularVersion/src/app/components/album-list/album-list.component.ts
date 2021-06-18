@@ -43,6 +43,7 @@ export class AlbumListComponent implements OnInit {
           nome: this.inputNome,
           fotos: [{ url: this.inputImag }]
         });
+        console.log(this.albuns)
         this.inputImag = "";
         this.inputNome = "";
       }

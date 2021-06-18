@@ -22,12 +22,12 @@
 .services .service .icon img {
   max-width: 400px; /*Tamanho máximo do icon*/
 }
-@media (max-width: 1068px) {
+@media (max-width: 1400px) {
   .services {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .services {
     grid-template-columns: 1fr;
   }

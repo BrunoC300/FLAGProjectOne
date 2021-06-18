@@ -4,7 +4,7 @@ import { AlbumDisplayComponent } from './components/album-display/album-display.
 import { AlbumListComponent } from './components/album-list/album-list.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
-import { ServicesComponent } from './components/services/services.component';
+import { ServicesComponent } from './components/servicos/services.component';
 
 const routes: Routes = [
   { path: 'albuns/:id', component: AlbumDisplayComponent },

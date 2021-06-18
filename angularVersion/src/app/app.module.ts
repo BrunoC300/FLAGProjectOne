@@ -10,7 +10,7 @@ import { AlbumPhotoComponent } from './components/album-photo/album-photo.compon
 import { CreateAlbumComponent } from './components/create-album/create-album.component';
 import { AddPhotoComponent } from './components/add-photo/add-photo.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ServicesComponent } from './components/services/services.component';
+import { ServicesComponent } from './components/servicos/services.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AlbumListComponent } from './components/album-list/album-list.component';

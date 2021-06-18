@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { ALBUNS } from './mock-albuns'
-import { SERVIÇOS } from './mock-services'
-import { Album } from './models/album';
-import { Serviço } from './models/serviço';
+import { ALBUNS } from '../mock-albuns'
+import { SERVIÇOS } from '../mock-services'
+import { Album } from '../models/album';
+import { Serviço } from '../models/serviço';
 
 @Injectable({
   providedIn: 'root'

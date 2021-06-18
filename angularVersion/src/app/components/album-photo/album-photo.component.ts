@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Foto } from '../../models/foto';
-import { FotosService } from '../../fotos.service'
+import { FotosService } from '../../services/fotos.service'
 import { ActivatedRoute } from '@angular/router';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +14,6 @@ import { Album } from 'src/app/models/album';
 export class AlbumPhotoComponent implements OnInit {
 
   deleteIcon = faTrashAlt;
-  editIcon = faEdit;
   albuns: Album[] = []
   fotos: Foto[] = []
 

@@ -1,0 +1,23 @@
+.containerAlbum {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.album--create {
+  padding: 30px;
+  margin: 20px 0 auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+.button--add--album {
+  background-color: lightgray;
+  border-radius: 50%;
+  color: black;
+  font-size: 1em;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+}

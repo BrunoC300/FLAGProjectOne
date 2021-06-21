@@ -1,0 +1,20 @@
+<div class="containerAlbum">
+  <h1>Crie o seu Album:</h1>
+  <div class="album--create">
+    <label for="nomeAlbum">Nome:</label>
+    <input class="nomeAlbum" type="text" [(ngModel)]="inputNome" />
+    <form class="album__form" (submit)="addAlbum()">
+      <label for="myfile">Select a file: </label>
+      <input
+        class="imagemAlbum"
+        type="file"
+        id="myfile"
+        name="myfile"
+        [(ngModel)]="inputImag"
+      />
+      <button class="button--add--album">
+        <fa-icon [icon]="addIcon"></fa-icon>
+      </button>
+    </form>
+  </div>
+</div>

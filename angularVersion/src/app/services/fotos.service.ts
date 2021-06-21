@@ -12,7 +12,16 @@ export class FotosService {
 
   constructor() { }
 
-  getAlbuns(): Observable<Album[]> {
+  getAlbuns() {
+    const albuns = JSON.parse(localStorage.getItem("albuns") || "[]");
+    return albuns;
+  }
+  getAlbumById(id: number) {
+    const ALBUNS = JSON.parse(localStorage.getItem("albuns") || "[]");
+    const albuns = ALBUNS.find((h: Album) => h.id === id)!;
+    return albuns;
+  }
+  /*getAlbuns(): Observable<Album[]> {
     const albuns = of(ALBUNS);
     return albuns;
   }
@@ -22,7 +31,7 @@ export class FotosService {
     // Error handling will be added in the next step of the tutorial.
     const albuns = ALBUNS.find(h => h.id === id)!;
     return of(albuns);
-  }
+  }*/
 
   getServiços(): Observable<Serviço[]> {
     const servicos = of(SERVIÇOS);

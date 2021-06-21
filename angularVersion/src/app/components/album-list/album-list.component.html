@@ -1,35 +1,11 @@
-<div class="containerAlbum">
-  <h1>Crie o seu Album:</h1>
-  <div>
-    <label for="nomeAlbum">Nome:</label>
-    <input class="nomeAlbum" type="text" [(ngModel)]="inputNome" /><br /><br />
-  </div>
-  <div>
-    <form class="album__form" (submit)="addAlbum()">
-      <label for="myfile">Select a file:</label>
-      <input
-        class="imagemAlbum"
-        type="file"
-        id="myfile"
-        name="myfile"
-        [(ngModel)]="inputImag"
-      /><br /><br />
-      <button>Go</button>
-    </form>
-  </div>
-</div>
-
+<app-create-album></app-create-album>
 <section class="album-shoots">
   <div class="portfolio">
-    <div
-      *ngFor="let album of albuns; let i = index"
-      class="item"
-      routerLink="/albuns/{{ album.id }}"
-    >
+    <div *ngFor="let album of albuns; let i = index" class="item">
       <img src="{{ album.fotos[0].url }}" alt="" />
       <div class="action">
         <p class="nomeAlbum">{{ album.nome }}</p>
-        <a href="#">Launch</a>
+        <a routerLink="/albuns/{{ album.id }}">Launch</a>
         <button (click)="removeAlbum(i)" class="button delete">
           <fa-icon [icon]="deleteIcon"></fa-icon>
         </button>

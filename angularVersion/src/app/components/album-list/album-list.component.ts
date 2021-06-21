@@ -21,34 +21,17 @@ export class AlbumListComponent implements OnInit {
   ngOnInit(): void {
     this.getAlbuns();
   }
-
-  getAlbuns(): void {
-    this.albunsService.getAlbuns()
-      .subscribe(album => this.albuns = album);
-  }
-
   removeAlbum(id: number) {
     const answer = window.confirm("Tem a certeza?");
-    if (answer) { this.albuns = this.albuns.filter((v, i) => i !== id); }
-  }
-
-  addAlbum() {
-    if (this.inputImag) {
-      const answer = window.confirm("Confirmar?");
-      if (answer) {
-        const extra: string = "assets/img"
-        this.inputImag = `${extra}${this.inputImag.slice(11)}`
-        this.albuns.push({
-          id: this.albuns.length - 1,
-          nome: this.inputNome,
-          fotos: [{ url: this.inputImag }]
-        });
-        console.log(this.albuns)
-        this.inputImag = "";
-        this.inputNome = "";
-      }
+    if (answer) {
+      this.albuns = this.albuns.filter((v, i) => i !== id);
+      localStorage.setItem('albuns', JSON.stringify(this.albuns));
     }
-
+    ;
   }
+  getAlbuns() {
+    this.albuns = this.albunsService.getAlbuns()
+  }
+
 
 }
